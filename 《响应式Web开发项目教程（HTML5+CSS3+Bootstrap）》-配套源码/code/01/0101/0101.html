@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<!--网页标题为HTML5 logo-->
+<title>HTML5 logo</title>
+<!--链入式样式表，浏览器运行时会加载解析css/0101/目录下的logo.css文件-->
+<link href="css/logo.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+   <!--这是HTML5 logo的最外层的盒子div，类名为bg-->
+   <div class="bg" >
+      <!--每一束白色光束的div盒子，行内样式style="transform:rotate(5deg)"用于设置div变形的样式，即旋转5度，这是CSS3新增的属性-->
+      <div class="beam" style="transform:rotate(5deg)"></div>
+      <div class="beam" style="transform:rotate(15deg)"></div>
+      <div class="beam" style="transform:rotate(25deg)"></div>
+      <div class="beam" style="transform:rotate(35deg)"></div>
+      <div class="beam" style="transform:rotate(45deg)"></div>
+      <div class="beam" style="transform:rotate(55deg)"></div>
+      <div class="beam" style="transform:rotate(65deg)"></div>
+      <div class="beam" style="transform:rotate(75deg)"></div>
+      <div class="beam" style="transform:rotate(85deg)"></div>
+      <div class="beam" style="transform:rotate(95deg)"></div>
+      <div class="beam" style="transform:rotate(105deg)"></div>
+      <div class="beam" style="transform:rotate(115deg)"></div>
+      <div class="beam" style="transform:rotate(125deg)"></div>
+      <div class="beam" style="transform:rotate(135deg)"></div>
+      <div class="beam" style="transform:rotate(145deg)"></div>
+      <div class="beam" style="transform:rotate(155deg)"></div>
+      <div class="white beam" style="transform:rotate(165deg)"></div>
+      <div class="white beam" style="transform:rotate(175deg)"></div>
+      <!--中心logo的div盒子类名为logo，设置行内样式为绝对定位，距离上边120px,距离左边229px-->
+      <div class="logo" style="top:120px;left:229px;">
+         <!-- 盾牌（左） -->
+         <div class="d_shield1" ></div>
+         <div class="d_shield2" ></div>
+         <div class="d_shield3" ></div>
+         <!-- 盾牌（右） -->
+         <div class="d_shield4" ></div>
+         <div class="d_shield5" ></div>
+         <div class="d_shield6" ></div>
+         <!-- 浅橘色部分 -->
+         <!--定义行内样式给整个浅橘色部分的div盒子进行某种变形（CSS3新增属性），缩放为原来的0.82倍，并给这个div绝对定位-->
+         <div style="transform:scale(0.82);left:31px;top:25px">
+            <div class="l_shield1" ></div>
+            <div class="l_shield2" ></div>
+            <div class="l_shield3" ></div>
+         </div>
+         <!--以下四个div组成logo里面数字5的左半边灰色部分-->
+         <div class="gray1" ></div>
+         <div class="gray2" ></div>
+         <div class="gray3" ></div>
+         <div class="gray4" ></div>
+         <!--以下四个div组成logo里面数字5的右半边白色部分-->
+         <div class="white1" ></div>
+         <div class="white2" ></div>
+         <div class="white3" ></div>
+         <div class="white4" ></div>
+         <!-- 最后的修补 -->
+         <div class="d_shield7" ></div>
+         <div class="l_shield4" ></div>
+         <img src="images/HTML.png">
+      </div>
+   </div>
+</body>
+</html>

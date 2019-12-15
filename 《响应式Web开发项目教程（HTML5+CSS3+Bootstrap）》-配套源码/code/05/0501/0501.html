@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Canvas案例-网页涂鸦板</title>
+    </head>
+<body>
+    <!--<center></center>表示将标签内所有的内容居中-->
+    <center>
+       <canvas id="cavsElem">
+        你的浏览器不支持canvas，请升级浏览器
+       </canvas>
+    </center>
+    <script>
+        (function(){
+            //获得画布
+            var canvas = document.getElementById('cavsElem');
+            //准备画笔（获取上下文对象）
+            var context = canvas.getContext('2d');
+            //设置标签的宽高和边框
+            canvas.width = 900;
+            canvas.height = 600;
+            canvas.style.border = "1px solid #000";
+            //当鼠标按下触发onmousedown事件时，定义一个函数获取鼠标起始坐标
+            canvas.onmousedown = function(e) {
+                var x = e.clientX - canvas.getBoundingClientRect().left;
+                var y = e.clientY - canvas.getBoundingClientRect().top;
+                context.beginPath();//开始规划路径
+                context.moveTo(x, y);//移动起始点
+                //当鼠标移动触发onmousemove事件时,定义一个函数获取绘制线条的坐标
+                canvas.onmousemove = function(event) {
+                    var x = event.clientX- canvas.getBoundingClientRect().left;
+                    var y = event.clientY- canvas.getBoundingClientRect().top;
+                    // canvas.clearRect(0, 0, 900, 600);
+                    context.lineTo(x, y);//绘制线条
+                    context.stroke();//绘制描边
+                };
+                //当鼠标按键被松开时，onmousemovet函数返回null
+                canvas.onmouseup = function(event) {
+                    canvas.onmousemove = null;
+                };
+            };
+        }());
+    </script>
+</body>
+</html>

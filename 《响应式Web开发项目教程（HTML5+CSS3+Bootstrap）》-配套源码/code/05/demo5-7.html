@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>绘制圆形和弧形</title>
+</head>
+<body>
+<canvas id="cavsElem" width='400' height="300">
+    你的浏览器不支持canvas，请升级浏览器
+</canvas>
+<script>
+    /* 绘制圆形*/
+    //获得画布并上下文对象
+    var context = document.getElementById('cavsElem').getContext('2d');
+    context.beginPath();//开始路径
+    context.arc(100,100,100,0,2*Math.PI,true);//绘制圆形，true为逆时针
+    context.closePath();//关闭路径
+    context.fillStyle = 'green';//设置填充颜色
+    context.fill();//填充
+    /* 绘制弧形*/
+    context.beginPath();//开始路径
+    context.strokeStyle = "#fff";//设置描边颜色
+    context.lineWidth = 5;//设置线的粗细
+    context.arc(100,150,25,Math.PI/6,5*Math.PI/6,false);//绘制弧形，false为顺时针
+    context.stroke();//描边
+</script>
+</body>
+</html>

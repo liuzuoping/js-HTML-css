@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>clip()剪切任意形状和尺寸区域</title>
+</head>
+<body>
+<canvas id="cavsElem" width="400" height="300" >
+    你的浏览器不支持canvas，请升级浏览器
+</canvas>
+<script>
+    //获得画布
+    var canvas=document.getElementById('cavsElem');
+    //设置画布边框
+    canvas.style.border="1px solid #000";
+    //获取上下文
+    var context = canvas.getContext('2d');
+    // 剪切矩形区域
+    context.rect(50,20,200,120);//(x,y,width,height)
+    context.stroke();//描边
+    context.clip();
+    // 在 clip()之后绘制圆形,只有被剪切区域的内圆形可见
+    context.arc(200,100,70,0,2*Math.PI,true);//(x,y,半径,开始弧度，结束弧度，true代表逆时针绘制圆形)
+    context.fillStyle="pink";
+    context.fill();//填充
+</script>
+</body>
+</html>

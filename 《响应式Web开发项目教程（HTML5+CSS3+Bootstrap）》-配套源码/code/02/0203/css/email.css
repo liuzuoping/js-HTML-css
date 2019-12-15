@@ -1,0 +1,133 @@
+/*第2单元 项目2-3  手机邮箱导航页面 */
+html,body,div,span,h1,a,ul,li,nav {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;/*元素的基线同父元素的基线对齐*/
+}
+body
+{
+    line-height:1em;
+    line-height:1em;
+    background: #F4F4F4;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.l-main
+{
+    width: 530px;
+    margin: 0 auto;
+}
+.menu
+{
+    width: 250px;
+    margin: 40px;
+    background: #fff;
+    /*盒子阴影：水平方向0 垂直方向向下1px 模糊程度4px 黑色透明度30%*/
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;/*边框圆角5px*/
+    float: left;
+}
+.menu_header
+{
+    background: #4B4F55;
+    border-bottom: 1px solid #353A40;/*设置元素下边框为1px颜色#353A40的实线*/
+    border-radius: 5px 5px 0 0;/*边框圆角：左上角5px 右上角5px 右下角0 左下角0*/
+}
+.menu_header-title
+{
+    color: #fff;
+    padding: 15px;
+    /*文本阴影：垂直方向0 水平方向向右1px 透明度40%的黑色阴影*/
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }
+.menu_body
+{
+    border-radius: 0 0 5px 5px;/*边框圆角：左上角、右上角为0，右下角、左下角5px*/
+}
+.nav
+{
+    list-style: none;
+}
+.nav_item
+{
+    position: relative;
+}
+.nav_item-link
+{
+    padding: 10px 15px;/*内边距：上下10px 左右1px*/
+    text-decoration: none;/*文本样式：无*/
+    color: #8B8E93;
+    display: block;/*把行元素强制转换为块元素*/
+    border-bottom: 1px solid #F0F0F0;
+}
+.nav_item-link:hover
+{
+    background: #f0f0f0;/*鼠标悬浮在该元素的时候，背景颜色变为#f0f0f0*/
+}
+/*设置当鼠标点击该元素时背景颜色和文字颜色、下边框颜色，盒子内阴影：水平方向向右1px颜
+色为#7A828D*/
+.nav_item-link.is-active
+{
+    background: #6E757F;
+    color: #fff;
+    border-bottom-color: #4B4F55;
+    box-shadow: 0 1px 0 #7A828D inset;
+}
+.nav_item-link.is-active:after
+{
+    content: '';
+    display: block;
+    /*绝对定位，父元素要加position: relative;记住“子绝父相”原则*/
+    position: absolute;
+    top: 50%;/*距父元素上边50%*/
+    right: -6px;/*距父元素左边-6px*/
+    margin-top: -6px;/*顶部外边距为-6px*/
+    border-top: 6px solid transparent;/*上边框：6px的透明的实线*/
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #6E757F;
+}
+.nav_item-link.is-active
+{
+    color: #fff;/*当鼠标点击该元素时，文字颜色为白色*/
+}
+.nav_item:last-child .nav_item-link
+{
+    border-bottom: none;/*底边框：无*/
+}
+.nav_item-icon
+{
+    width: 20px;
+    text-align: center;/*文本水平居中*/
+    font-size: 18px;
+    margin-right: 10px;
+}
+.badge
+{
+    font-size: 12px;
+    padding: 2px 8px;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.badge-warning
+{
+    background: #ED373F;
+    border-color: #ED373F;
+}
+.fa-flag{
+    color: red;
+}
+.fa-space-shuttle{
+    color: #508049;
+}
+.fa-archive{
+    color: orange;
+}
+.fa-envelope{
+    color: #35b3ff;
+}

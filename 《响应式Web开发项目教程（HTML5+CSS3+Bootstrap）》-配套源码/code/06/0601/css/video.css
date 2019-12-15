@@ -1,0 +1,22 @@
+/*第6单元 项目6-1视频播放器 css文件*/
+/*设置所有按钮的样式*/
+button {
+    display: inline-block;/*强制转换为行内块元素*/
+    outline: none;/*该元素获得焦点时，不出现虚线框（或高亮框）*/
+    cursor: pointer;/*鼠标悬停时变为“小手”*/
+    text-align: center;
+    text-decoration: none;
+    /*字体样式：字体大小14px/行高100% 字体名称*/
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: 0.5em 2em 0.55em;/*顶部内边距0.5em、左右内边距2em、底部内边距0.55em*/
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3);/*文本阴影*/
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;/*边框圆角*/
+    background-color: #944bc8;
+    color: white;
+}
+/*设置所有按钮鼠标悬停效果*/
+button:hover {
+    text-decoration: none;/*清除文本样式*/
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5音乐播放器</title>
+    <link rel="stylesheet" href="css/audio.css" media="screen" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" media="screen" type="text/css" />
+</head>
+<body>
+  <div id="container">
+	<div id="player">
+		<!--引入音频源文件-->
+		<audio id="audio">
+			<source src="audio/陪你度过漫长岁月.mp3" type="audio/mpeg" codecs="mp3"/>
+		</audio>
+		<!--引入专辑封面图片 -->
+		<img src="images/music.jpg">
+		<!--制作显示歌词的按钮-->
+		<label class="to-lyrics-label" for="to-lyrics"><i class="fa fa-caret-down fa-lg"></i></label>
+		<input type="checkbox" id="to-lyrics"><!-- 歌词切换-->
+		<div class="cover">
+			<div class="controls">
+				<button  title="循环播放"><i class="fa fa-retweet fa-lg"></i></button>
+				<button  title="上一曲"><i class="fa fa-backward fa-2x"></i></button>
+				<button id="play-pause" title="播放" onclick="togglePlayPause()"><i class="fa fa-play fa-3x"></i></button><!--播放/暂停切换按钮-->
+				<button  title="下一曲"><i class="fa fa-forward fa-2x"></i></button>
+				<button title="顺序播放"><i class="fa fa-random fa-lg"></i></button>
+				<input  name="volume" id="volume" min="0" max="1" step="0.1" type="range" onchange="setVolume()" /><!--音量控件-->
+			</div><!-- #controls -->
+			<div class="info">
+				<p class="song"><a href="#" target="_blank">陪你度过漫长岁月</a></p>
+				<p class="author"><a href="#" target="_blank">陈奕迅</a></p>
+			</div><!-- #info -->
+			<div class="lyrics">
+				<p>陪你度过漫长岁月</p>
+				<p>演唱：陈奕迅</p>
+
+				<p>走过了人来人往 不喜欢也得欣赏</p>
+				<p>我是沉默的存在 不当你世界 只作你肩膀</p>
+				<p>拒绝成长到成长 变成想要的模样</p>
+				<p>在举手投降以前 让我再陪你一段</p>
+
+				<p>陪你把沿路感想活出了答案</p>
+				<p>	陪你把独自孤单变成了勇敢</p>
+				<p>	一次次失去又重来 我没离开</p>
+				<p>陪伴是 最长情的告白</p>
+				<p>陪你把想念的酸 拥抱成温暖</p>
+				<p>	陪你把彷徨 写出情节来</p>
+				<p>未来多漫长 再漫长 还有期待</p>
+				<p>陪伴你 一直到 故事给说完</p>
+
+				<p>让我们静静分享 此刻难得的坦白</p>
+				<p>只是无声地交谈 都感觉幸福 感觉不孤单</p>
+			</div><!-- #lyrics -->
+			<p class="scroll">收起</p>
+		</div><!-- cover -->
+	</div><!-- #player -->
+</div><!-- #container -->
+  <script src="js/audio.js" charset="gbk"></script>
+</body>
+</html>

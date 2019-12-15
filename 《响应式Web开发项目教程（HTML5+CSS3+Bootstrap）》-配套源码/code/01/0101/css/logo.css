@@ -1,0 +1,168 @@
+/*第1单元 项目1-1  使用HTML5+CSS3绘制HTML5的logo*/
+body{
+    margin:0;   /*设置body的外边距为0*/
+    padding:0;  /*设置body的内边距为0*/
+}
+div{
+    position:absolute;/*给所有的div设置绝对定位*/
+}
+/*给类名为bg的元素设置宽、高、背景颜色*/
+.bg{
+
+    width:800px;
+    height:600px;
+    background:#f2f2f2;
+    overflow:hidden;/*隐藏内容溢出*/
+}
+/*给类名为beam的元素设置宽、高、背景颜色、以及绝对定位*/
+.beam{
+    width:1600px;/*宽度为1600像素*/
+    height:20px;/*高度为20像素*/
+    background:#fff;/*背景为白色*/
+    top:290px;/*绝对定位，距父元素上边线290像素*/
+    left:-400px;/*绝对定位，距父元素左边线-400像素*/
+}
+.d_shield1,.d_shield2,.d_shield3,.d_shield4,.d_shield5,.d_shield6,.d_shield7{
+    background:#e15016;
+}
+/*给类名为d_shield1的元素设置宽、高以及绝对定位*/
+.d_shield1{
+    left:32px;/*绝对定位，距父元素左边线32像素*/
+    width:140px;
+    height:346px;
+}
+.d_shield2{
+    transform:skewx(5deg);/*变形（CSS3新增属性）：水平方向斜切5度*/
+    left:16px;/*绝对定位，距父元素左边线16像素*/
+    width:100px;
+    height:346px;
+}
+.d_shield3{
+    transform:skewy(15deg);/*变形：垂直方向斜切15度*/
+    top:265px;/*绝对定位，距父元素上边线265像素*/
+    left:32px;/*绝对定位，距父元素左边线32像素*/
+    width:140px;
+    height:100px;
+}
+.d_shield4{
+    left:172px;
+    width:140px;
+    height:346px;
+}
+.d_shield5{
+    transform:skewx(-5deg);
+    left:227px;
+    width:100px;
+    height:346px;
+}
+.d_shield6{
+    transform:skewy(-15deg);
+    top:265px;
+    left:172px;
+    width:140px;
+    height:100px;
+}
+.d_shield7{
+    height:20px;
+    top:199px;
+    width:80px;
+    left:60px;
+}
+.l_shield1,.l_shield2,.l_shield3,.l_shield4{
+    background:#ee6812;
+}
+.l_shield1{
+    left:172px;
+    width:140px;
+    height:346px;
+}
+.l_shield2{
+    transform:skewx(-5deg);
+    left:227px;
+    width:100px;
+    height:363px;
+}
+.l_shield3{
+    transform:skewy(-15deg);
+    top:282px;
+    left:172px;
+    width:138px;
+    height:100px;
+}
+.l_shield4{
+    height:43px;
+    top:113px;
+    width:100px;
+    left:180px;
+}
+.gray1,.gray2,.gray3,.gray4{
+    background:#ebebeb;
+}
+/*给类名为gray1的元素设置宽、高以及绝对定位*/
+.gray1{
+    height:43px;
+    width:102px;
+    left:70px;
+    top:70px;
+}
+/*给类名为gray2的元素设置宽、高、斜切变形以及绝对定位*/
+.gray2{
+    width:46px;
+    height:216px;
+    transform:skewx(5deg);
+    top:70px;
+    left:75px;
+}
+.gray3{
+    width:95px;
+    height:43px;
+    left:77px;
+    top:156px;
+}
+.gray4{
+    width:87px;
+    height:47px;
+    left:85px;
+    top:251px;
+    transform:skewy(15deg);
+}
+/*给类名为white1、white2、white3、white4的四个元素都设置背景颜色为白色*/
+.white1,.white2,.white3,.white4{
+    background:#fff;
+}
+/*给类名为white1的元素设置宽、高以及绝对定位*/
+.white1{
+    width:102px;
+    height:43px;
+    left:172px;
+    top:70px;
+}
+/*给类名为white2的元素设置宽、高、斜切变形以及绝对定位*/
+.white2{
+    width:46px;
+    height:216px;
+    transform:skewx(-5deg);
+    top:70px;
+    left:223px;
+}
+.white3{
+    height:43px;
+    width:95px;
+    left:172px;
+    top:156px;
+}
+.white4{
+    height:47px;
+    width:87px;
+    left:172px;
+    top:251px;
+    transform:skewy(-15deg);
+}
+/*给img标签设置宽、高以及固定定位*/
+img {
+    position: fixed;/*固定定位*/
+    top: 8px;
+    left: 225px;
+    width: 350px;
+    height: 110px;
+}

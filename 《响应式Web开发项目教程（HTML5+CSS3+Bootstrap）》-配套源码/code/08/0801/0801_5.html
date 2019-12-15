@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>餐饮网站轮播广告模块</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /*轮播广告*/
+        .pic{
+            margin: 0 auto;
+            width: 800px;
+            padding: 20px;
+        }
+        .carousel {
+            background: white;
+        }
+        /*媒体查询：当视口小于992px时缩小了轮播div的宽度，图片换行*/
+        @media (max-width:992px) {
+            .pic{
+                width: 415px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--轮播广告-->
+<div class="container hidden-xs " >
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner ">
+            <div class="item active">
+                <div class="pic">
+                    <img src="images/1p.jpg"  alt="">
+                    <img src="images/2p.jpg"  alt="">
+                    <img src="images/3p.png"  alt="">
+                    <img src="0801/images/4p.jpg"  alt="">
+                    <img src="images/5p.jpg"  alt="">
+                    <img src="images/6p.jpg"  alt="">
+                </div>
+            </div>
+            <div class="item ">
+                <div class="pic">
+                    <img src="images/2p.jpg"  alt="">
+                    <img src="images/3p.png"  alt="">
+                    <img src="0801/images/4p.jpg"  alt="">
+                    <img src="images/5p.jpg"  alt="">
+                    <img src="images/6p.jpg"  alt="">
+                    <img src="images/7p.jpg"  alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="images/3p.png"  alt="">
+                    <img src="0801/images/4p.jpg"  alt="">
+                    <img src="images/5p.jpg"  alt="">
+                    <img src="images/6p.jpg"  alt="">
+                    <img src="images/7p.jpg"  alt="">
+                    <img src="images/8p.jpg"  alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="0801/images/4p.jpg"  alt="">
+                    <img src="images/5p.jpg"  alt="">
+                    <img src="images/6p.jpg"  alt="">
+                    <img src="images/7p.jpg"  alt="">
+                    <img src="images/8p.jpg"  alt="">
+                    <img src="images/1p.jpg"  alt="">
+                </div>
+            </div>
+            <div class="item ">
+                <div class="pic">
+                    <img src="images/5p.jpg"  alt="">
+                    <img src="images/6p.jpg"  alt="">
+                    <img src="images/7p.jpg"  alt="">
+                    <img src="images/8p.jpg"  alt="">
+                    <img src="images/1p.jpg"  alt="">
+                    <img src="images/2p.jpg"  alt="">
+                </div>
+            </div>
+            <div class="item ">
+                <div class="pic">
+                    <img src="images/6p.jpg"  alt="">
+                    <img src="images/7p.jpg"  alt="">
+                    <img src="images/8p.jpg"  alt="">
+                    <img src="images/1p.jpg"  alt="">
+                    <img src="images/2p.jpg"  alt="">
+                    <img src="images/3p.png"  alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="images/7p.jpg"  alt="">
+                    <img src="images/8p.jpg"  alt="">
+                    <img src="images/1p.jpg"  alt="">
+                    <img src="images/2p.jpg"  alt="">
+                    <img src="images/3p.png"  alt="">
+                    <img src="0801/images/4p.jpg"  alt="">
+                </div>
+            </div>
+            <div class="item ">
+                <div class="pic">
+                    <img src="images/8p.jpg"  alt="">
+                    <img src="images/1p.jpg"  alt="">
+                    <img src="images/2p.jpg"  alt="">
+                    <img src="images/3p.png"  alt="">
+                    <img src="0801/images/4p.jpg"  alt="">
+                    <img src="images/5p.jpg"  alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left  " href="#myCarousel" role="button " data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right " href="#myCarousel" role="button" data-slide="next">&rsaquo;</a>
+    </div>
+</div>
+<!--轮播广告结束-->
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="lib/jquery/jquery-1.11.0.min.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

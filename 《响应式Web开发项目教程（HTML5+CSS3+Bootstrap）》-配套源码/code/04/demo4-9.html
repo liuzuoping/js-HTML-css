@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HTML5表单验证</title>
+</head>
+<body>
+<form action="#" method="get">
+    请输入您的邮箱：<input type="email" name="formmail" required/><br/><br/>
+    请输入个人网址：<input type="url" name="user_url" required/><br/><br/>
+    <!--pattern属性用于验证输入的内容是否与定义的正则表达式匹配，正则表达式[1-9]d{5}(?!d)代表六位数中国邮编-->
+    请输入中国邮编：<input type="text" pattern="[1-9]d{5}(?!d)" name="postcode" required/><br/><br/>
+    <input type="submit" value="提交"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript操作audio对象</title>
+</head>
+<script>
+    //页面加载完毕后执行
+    window.onload=function(){
+        //通过标签名获取button按钮
+        document.getElementsByTagName("button")[0].onclick=function(){
+           //通过标签名获取audio对象
+            document.getElementsByTagName("audio")[0].load();
+            document.getElementsByTagName("audio")[0].play();
+        }
+    }
+</script>
+<body>
+<audio src="audio/demo6-5/music.mp3"></audio>
+<button >播放音乐</button>
+</body>
+</html>

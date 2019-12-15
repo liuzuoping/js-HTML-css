@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>固定布局转换为百分比布局</title>
+    <style type="text/css">
+        body>*{ width:980px; height:auto; margin:0 auto; margin-top:10px;
+            border:1px solid #000; padding:5px;}
+        header{ height:50px;}
+        section{ height:300px;}
+        footer{ height:30px;}
+        section>*{ height:100%; border:1px solid #000; float:left;}
+        aside{ width:250px;}
+        article{ width:700px; margin-left:10px;}
+    </style>
+</head>
+<body>
+<header>头</header>
+<nav>导航</nav>
+<section>
+    <aside>侧边栏</aside>
+    <article>文章</article>
+</section>
+<footer>页脚</footer>
+</body>
+</html>

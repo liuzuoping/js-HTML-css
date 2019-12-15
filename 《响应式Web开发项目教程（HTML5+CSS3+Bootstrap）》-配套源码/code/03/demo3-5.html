@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 圆角边框</title>
+	<style>
+		body {
+			padding: 0;
+			background-color: #F7F7F7;
+		}
+		div{
+			margin:20px;
+			float: left;
+		}
+		/*饼环*/
+		.border-radius {
+			width: 40px;
+			height: 40px;
+			border: 70px solid #93baff;
+			border-radius: 90px;
+		}
+		/*四边不同色*/
+		.border-radius1 {
+			width: 0px;
+			height: 0px;
+			border-width: 90px;
+			border-style: solid;
+			border-color: #ff898e #93baff #c89386 #ffb151;
+		}
+	</style>
+</head>
+<body>
+	<div class="border-radius"></div>
+	<div class="border-radius1"></div>
+</body>
+</html>

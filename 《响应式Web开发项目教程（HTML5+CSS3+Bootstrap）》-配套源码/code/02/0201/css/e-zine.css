@@ -1,0 +1,34 @@
+/*第2单元 项目2-1  电子杂志页面 */
+body,  h4 {
+    margin: 0;  /*外边距为0*/
+    padding: 0;  /*内边距为0*/
+}
+/*给整个body设置一张背景图*/
+body{
+    background-image: url(../images/bg.jpg) ;
+}
+@font-face {
+    font-family: myFont;
+    src:url('../fonts/简方叠体.TTF');
+}
+.wrapper {
+    width: 1024px;
+    padding: 30px;  /*上下左右的内边距都是30px;*/
+    line-height: 1.75em;/*行高为1.75em*/
+    margin: 0 auto;/*水平居中*/
+    font-family: myFont;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-column-count: 2;/*列数为2*/
+    -webkit-column-width: 400px;/*每列的宽度为400px*/
+    -webkit-column-gap: 100px;/*列与列之间的空隙为100px*/
+    -webkit-column-rule: 3px solid #CCC;/*列中间的分割线为#ccc颜色的3px实线*/
+    text-indent:2em;/*文本首行缩进2个文字*/
+}
+h4 {
+    font-size: 24px;
+    -webkit-column-span: all;/*设置对象元素横跨所有列*/
+}
+p{
+    font-weight: bold;/*字体粗细为粗体*/
+}

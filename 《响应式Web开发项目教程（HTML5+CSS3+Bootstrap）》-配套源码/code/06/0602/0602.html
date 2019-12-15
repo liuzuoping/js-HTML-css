@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 Web钢琴</title>
+	<link rel="stylesheet" type="text/css" href="css/piano.css" />
+	<script type="text/javascript" src="js/piano.js"></script>
+</head>
+<body>
+<section class="main">
+	<h4>HTML5 Web钢琴，使用鼠标单击进行弹奏 <br/>支持浏览器：FireFox、Chrome</h4>
+	<!--用<audio></audio>标签引入音频源-->
+	<audio src="audio/c4.ogg"></audio>
+	<audio src="audio/c4m.ogg"></audio>
+	<audio src="audio/d4.ogg"></audio>
+	<audio src="audio/d4m.ogg"></audio>
+	<audio src="audio/e4.ogg"></audio>
+	<audio src="audio/f4.ogg"></audio>
+	<audio src="audio/f4m.ogg"></audio>
+	<audio src="audio/g4.ogg"></audio>
+	<audio src="audio/g4m.ogg"></audio>
+	<audio src="audio/a4.ogg"></audio>
+	<audio src="audio/a4m.ogg"></audio>
+	<audio src="audio/b4.ogg"></audio>
+	<audio src="audio/c5.ogg"></audio>
+	<!--整个钢琴用 <ul></ul> 标签，每一个 <div></div> 标签对应一个琴键-->
+	<ul>
+		<li>
+			<div class="key whiteKey">c4</div>
+			<div class="key blackKey">c4m</div>
+        </li>
+		<li>
+			<div  class="key whiteKey">d4</div>
+			<div  class="key blackKey">d4m</div>
+        </li>
+		<li><div  class="key whiteKey">e4</div></li>
+		<li>
+			<div  class="key whiteKey">f4</div>
+			<div class="key blackKey">f4m</div>
+        </li>
+		<li>
+			<div class="key whiteKey">g4</div>
+			<div class="key blackKey">g4m</div>
+        </li>
+		<li>
+			<div  class="key whiteKey">a4</div>
+			<div  class="key blackKey">a4m</div>
+        </li>
+		<li><div class="key whiteKey">b4</div></li>
+		<li class="nobd"><div class="key whiteKey">c5</div></li>
+	</ul>
+	</section>
+</body>
+</html>

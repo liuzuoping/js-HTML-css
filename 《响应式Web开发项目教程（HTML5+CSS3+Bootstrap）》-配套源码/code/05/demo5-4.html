@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Canvas绘制三角形</title>
+</head>
+<body>
+<canvas id="cavsElem">
+    你的浏览器不支持canvas，请升级浏览器
+</canvas>
+<script>
+    //===============基本绘制API====================
+    //获得画布
+    var canvas = document.getElementById('cavsElem');
+    var context = canvas.getContext('2d');  //获得上下文
+    //设置标签的属性宽高和边框
+    canvas.width = 900;
+    canvas.height = 600;
+    canvas.style.border="1px solid #000";
+    //绘制三角形
+    context.beginPath();        //开始路径
+    context.moveTo(100,100);    //三角形，左顶点
+    context.lineTo(300, 100);   //右顶点
+    context.lineTo(300, 300);   //底部的点
+    context.closePath();        //结束路径
+    context.stroke();           //描边路径
+//    context.fill();//填充
+</script>
+</body>
+</html>

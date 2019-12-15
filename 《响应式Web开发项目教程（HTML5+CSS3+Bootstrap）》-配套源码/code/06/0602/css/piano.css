@@ -1,0 +1,50 @@
+/*第6单元 项目6-2 HTML5 Web钢琴 css文件*/
+
+/* 给所有标签清除内边距、外边距、默认样式和边框*/
+*{ padding:0; margin:0 ; list-style:none; border:0;}
+.main {
+    margin:0 auto;
+    width:600px;
+    height:420px;
+    position:relative;
+    top:150px;
+}
+ul li{
+    width:60px;
+    height:360px;
+    float:left;/*向左浮动*/
+    position:relative;
+}
+div.key {
+    position: absolute;
+    float:left;
+    top:40px;
+    text-align: center;
+    font-size:16px;
+    background-position: bottom left;/*背景位置：垂直方向在底部 水平方向在左边*/
+    background-repeat: repeat-x;/*背景水平方向平铺*/
+
+}
+/*当鼠标悬浮在该元素时设置背景颜色为#cacbd1，鼠标变为“小手”*/
+.key:hover{
+    background-color: #cacbd1;
+    cursor:pointer;
+}
+div.whiteKey {
+    width:60px;
+    height:360px;
+    color:#666;
+    background-color:#eee;
+    border: 2px solid #999;
+    background-image:url("../images/key_back_white.png");
+}
+div.blackKey {
+    width:36px;
+    height:200px;
+    color:#ccc;
+    margin-left: 40px;
+    z-index: 999;/*z-index属性值越大，该元素层离用户越近*/
+    background-color:#666;
+    border: 2px solid #666;
+    background-image:url("../images/key_back_black.png");
+}

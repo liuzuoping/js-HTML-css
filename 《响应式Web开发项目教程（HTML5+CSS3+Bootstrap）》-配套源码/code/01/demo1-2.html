@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动和定位</title>
+</head>
+<style type="text/css">
+    /*给类名为header、aside、main、footer的元素设置背景颜色和边框*/
+    .header,.aside,.main,.footer{
+        background-color: pink; /*背景色为粉色*/
+        border: 1px solid yellow; /*边框为1px的黄色的实线*/
+    }
+    .header{
+        height: 100px;
+    }
+    .aside,.main{
+        height: 200px;
+    }
+    .aside{
+        width: 200px;
+        float:left;  /*类名为aside的元素左浮动*/
+    }
+    .main{
+        margin-left: 202px; /*元素左边距为202px*/
+    }
+    .footer{
+        height: 50px;
+    }
+    /*给类名为float-div的元素设置背景颜色、边框、宽高以及绝对定位*/
+    .float-div{
+        background-color: paleturquoise; /*背景色为苍白的宝石绿*/
+        border: 1px solid yellow; /*边框为1px的黄色实线*/
+        width: 100px;
+        height:100px;
+        position: absolute; /*绝对定位*/
+        top: 160px; /*距父元素顶部边线160px*/
+        left: 500px; /*距父元素左边线500px*/
+    }
+</style>
+<body>
+    <header class="header">header</header>
+    <aside class="aside">aside</aside>
+    <section class="main">section</section>
+    <footer class="footer">footer</footer>
+    <div class="float-div">floatdiv</div>
+</body>
+</html>

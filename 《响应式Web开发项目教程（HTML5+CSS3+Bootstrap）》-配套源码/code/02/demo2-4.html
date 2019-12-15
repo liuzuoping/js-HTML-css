@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>选择器优先级</title>
+    <style type="text/css">
+        #redP p {
+            /* 权值 = 100+1=101 */
+            color:#F00;  /* 红色 */
+        }
+        #redP .red em {
+            /* 权值 = 100+10+1=111 */
+            color:#00F; /* 蓝色 */
+
+        }
+        #redP p span em {
+            /* 权值 = 100+1+1+1=103 */
+            color:#FF0;/*黄色*/
+        }
+    </style>
+</head>
+<body>
+<div id="redP">
+    <p class="red">
+        第一个p标签文本显示为红色
+        <span><em>em标签文本显示为蓝色</em></span>
+    </p>
+    <p>第二个p标签文本显示为红色</p>
+</div>
+</body>
+</html>

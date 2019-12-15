@@ -1,0 +1,61 @@
+/*第5单元 项目5-2 发红包才能看的照片*/
+body {
+  padding: 0;
+  margin: 0;
+}
+.blurDiv {
+  position: relative;
+  width:877px;
+  height: 672px;
+  margin: 50px auto 0;/*外边距：顶部50px 左右水平居中 底部0*/
+}
+.blurDiv .blurImg {
+  width: 870px;
+  height: 672px;
+  display: block;/*把行元素强制转换为块元素*/
+  filter: blur(20px);/*滤镜：模糊程度20px*/
+  -webkit-filter: blur(20px);/*webkit保留 否则filter没有作用*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.blurDiv #myCanvas {
+  display: block;
+  margin: 0 auto;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ .blurDiv .button {
+  display: block;
+  width: 240px;
+  height: 60px;
+  border-radius: 5px;/*边框圆角5px*/
+  line-height: 60px;/*行高60px*/
+  text-align: center;/*文字水平居中*/
+  position: absolute;
+  top: 105%;
+  font-family: arial;
+  font-size: 1.5em;/*em是字体大小的单位，与px的区别在此不做详细介绍*/
+  color: #fff;
+  text-decoration: none;/*清除字体样式*/
+  z-index: 999;
+}
+ /*给该元素设置绝对定位和背景颜色*/
+.blurDiv #buttonReset {
+    left: 7%;/*距离父元素左边7%*/
+  background-color: #c86814;
+}
+/*当鼠标悬浮在该元素时，背景颜色变为#ffb151*/
+.blurDiv #buttonReset:hover {
+  background-color: #ffb151;
+}
+.blurDiv #buttonShow {
+    right: 7%;/*距离父元素右边7%*/
+  background-color: #ff2f2e;
+}
+.blurDiv #buttonShow:hover {
+  background-color: #ff596b;
+}

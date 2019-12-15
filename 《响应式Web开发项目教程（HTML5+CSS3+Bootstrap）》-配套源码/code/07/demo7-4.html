@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒属性</title>
+</head>
+<style type="text/css">
+    .box {
+        min-height: 200px;
+        display: flex;/*指定弹性盒的容器*/
+        /*
+        flex-direction: row|row-reverse|column|column-reverse;
+        flex-wrap: nowrap|wrap|wrap-reverse;
+         */
+        flex-flow: row;/*弹性盒子元素按横轴方向顺序排列*/
+        justify-content: center;/*设置弹性盒子元素向行中间位置对齐*/
+        align-items: flex-end;/*弹性盒子元素向垂直于轴的方向上的中间位置对齐*/
+        background-color: gray;
+    }
+    .A,.B,.C {
+        background-color: white;
+        border:1px solid gray;
+    }
+    .box div.A {
+        order: 1;/*order设置该子元素出现的顺序*/
+        flex-grow: 0;/*扩展比率*/
+        flex-shrink: 1;/*收缩比率*/
+        flex-basis: auto;/*宽度，像素值*/
+        align-self: center;/*该子元素在该行的纵轴上居中放置。*/
+    }
+    .box div.B {
+        order: 2;
+        flex: 0 1 auto;/*扩展比率0、收缩比率1和宽度居中的缩写形式*/
+        align-self: center;
+    }
+    .box div.C {
+        order: 3;
+        flex: 0 1 auto;
+        align-self: center;
+    }
+</style>
+<body>
+<div class="box">
+    <div class="A">A</div>
+    <div class="B">B</div>
+    <div class="C">C</div>
+</div>
+</body>
+</html>

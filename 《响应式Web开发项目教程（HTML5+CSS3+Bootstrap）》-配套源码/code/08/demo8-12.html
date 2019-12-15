@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>响应式工具</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        div{
+            border: 1px solid black;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+<br>
+<div class="container" style="padding: 40px;">
+    <div class="row visible-on">
+        <div class="col-xs-6 col-sm-3" >
+            <span class="hidden-xs">特别小型设备隐藏</span>
+            <span class="visible-xs">✔ 在特别小型设备上可见</span>
+        </div>
+        <div class="col-xs-6 col-sm-3" >
+            <span class="hidden-sm">小型设备隐藏</span>
+            <span class="visible-sm">✔ 在小型设备上可见</span>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-3" >
+            <span class="hidden-md">中型设备隐藏</span>
+            <span class="visible-md">✔ 在中型设备上可见</span>
+        </div>
+        <div class="col-xs-6 col-sm-3" >
+            <span class="hidden-lg">大型设备隐藏</span>
+            <span class="visible-lg">✔ 在大型设备上可见</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

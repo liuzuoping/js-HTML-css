@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript操作video对象</title>
+</head>
+<body>
+<video id="myVideo" src="video/myVideo.ogv">您的浏览器不支持video标签</video>
+<!--<br/><br/>-->
+<input  type="button" value="播放/暂停" onclick="playPause()"/>
+</body>
+<script>
+    var myVideo=document.getElementById("myVideo");
+    function playPause()
+    {
+        if (myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+</script>
+</html>

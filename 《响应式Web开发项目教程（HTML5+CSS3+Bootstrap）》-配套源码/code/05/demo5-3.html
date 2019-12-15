@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>getBoundingClientRect()</title>
+</head>
+<script>
+/*    该方法应用于button的onmousemove事件*/
+    function getRect(){
+       var obj= document.getElementById("example");//获取元素对象
+        var objRect=obj.getBoundingClientRect();//获取按钮位置
+//        当调用该方法时弹出信息
+        alert("top:" + objRect.top + ", right:" + objRect.right + ", bottom:" + objRect.bottom + ", left:" + objRect.left);
+    }
+</script>
+<body>
+    <!--<center></center>表示将标签内所有的内容居中-->
+    <center>
+        <button id="example" onmousemove="getRect()" >
+            返回本按钮距离浏览器左上角的值
+        </button>
+    </center>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>弹性盒布局</title>
+    <style>
+        body {
+            font: 24px Helvetica;
+            background: #fff;
+        }
+        .main {
+            min-height: 500px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;/*设置该div为一个弹性盒容器*/
+            flex-flow: row;/*子元素按横轴方向顺序排列*/
+        }
+        .main > article {
+            margin: 4px;
+            padding: 5px;
+            border-radius: 7pt;/*pt也是文字大小的一种单位，1pt=px*3/4 */
+            background: #719DCA;
+            flex: 3 ;/*用数字也可以达到分配宽度的效果，将容器分为5份，占3份*/
+            order: 2;/*排序为第2个子元素*/
+        }
+        .main > nav {
+            margin: 4px;
+            padding: 5px;
+            border-radius: 7pt;
+            background: #FFBA41;
+            flex: 1 ;/*将容器分为5份，占1份*/
+            order: 1;/*排序为第1个子元素*/
+        }
+        .main > aside {
+            margin: 4px;
+            padding: 5px;
+            border-radius: 7pt;
+            background: #FFBA41;
+            flex: 1 ;/*将容器分为5份，占1份*/
+            order: 3;/*排序为第3个子元素*/
+        }
+        header, footer {
+            display: block;
+            margin: 4px;
+            padding: 5px;
+            min-height: 100px;
+            border: 2px solid #FFBA41;
+            border-radius: 7pt;
+            background: #FFF;
+        }
+        @media all and (max-width: 640px) {/*当屏幕小于640px时*/
+            .main {
+                flex-flow: column; /*弹性盒中的子元素按纵轴方向排列*/
+            }
+            .main > article, .main > nav, .main > aside {
+                order: 0; /*将子元素都设置成同一个值，指按自然顺序排列*/
+            }
+            .main > nav, .main > aside, header, footer {
+                min-height: 50px;
+                max-height: 50px;
+            }
+        }
+ </style>
+</head>
+<body>
+    <header>header</header>
+    <div class="main">
+        <article>article</article>
+        <nav>nav</nav>
+        <aside>aside</aside>
+    </div>
+    <footer>footer</footer>
+</body>
+</html>
